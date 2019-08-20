@@ -2,18 +2,18 @@
     "collab_server" : "",
     "contents" : "",
     "created" : 1566302247196.000,
-    "dirty" : true,
+    "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "0",
     "id" : "7ADB92C",
-    "lastKnownWriteTime" : 1566302222,
-    "last_content_update" : 1566302998859,
-    "path" : "C:/Users/ChanWoo/Desktop/R_크롤링/R_크롤링/starbucks_박찬우/starbucks_박찬우/starbucks_박찬우.R",
+    "lastKnownWriteTime" : 1566303633,
+    "last_content_update" : 1566303633206,
+    "path" : "C:/Users/ChanWoo/Desktop/R_크롤링/R_크롤링/starbucks_박찬우/starbucks_박찬우/Crawling_starbucks.R",
     "project_path" : null,
     "properties" : {
         "cursorPosition" : "82,0",
-        "scrollLine" : "61"
+        "scrollLine" : "17"
     },
     "relative_order" : 1,
     "source_on_save" : false,

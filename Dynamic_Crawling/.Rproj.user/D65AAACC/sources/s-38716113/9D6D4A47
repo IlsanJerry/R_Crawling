@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1566303707812.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "779758736",
+    "id" : "9D6D4A47",
+    "lastKnownWriteTime" : 1566303734,
+    "last_content_update" : 1566303734849,
+    "path" : "C:/R_project/Crawling/Dynamic_Crawling/Crawling_Starbucks.R",
+    "project_path" : "Crawling_Starbucks.R",
+    "properties" : {
+        "cursorPosition" : "82,0",
+        "scrollLine" : "53",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

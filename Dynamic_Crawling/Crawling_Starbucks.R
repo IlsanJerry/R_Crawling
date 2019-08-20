@@ -8,7 +8,7 @@ library(httr)
 #Rselenium이 반드시 켜져 있어야함.
 remDr<-remoteDriver(remoteServerAddr = "localhost", port=4445, browserName="chrome")
 
-#Chrome Open
+#Chrome Open!
 remDr$open();
 site<- paste("https://www.istarbucks.co.kr/store/store_map.do?disp=locale")
 remDr$navigate(site)

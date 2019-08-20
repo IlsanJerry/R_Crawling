@@ -8,7 +8,7 @@ library(httr)
 #Rselenium이 반드시 켜져 있어야함.
 remDr<-remoteDriver(remoteServerAddr = "localhost", port=4445, browserName="chrome")
 
-#Chrome Open
+#Chrome Open!
 remDr$open();
 site<- paste("https://www.istarbucks.co.kr/store/store_map.do?disp=locale")
 remDr$navigate(site)
@@ -27,14 +27,11 @@ Sys.sleep(3)
 
 
 
-a<-1
+start_page<-1
 webElem <- remDr$findElement("css", "body")
 
-Store_name=NULL
-Address<-NULL
-burnho<-NULL
-lat<-NULL
-lng<-NULL
+Store_name<-NULL; Store_number<-NULL; Address<-NULL
+Lat<-NULL; Lng<-NULL
 
 for(i in 1:498){
   #매장명
@@ -51,10 +48,10 @@ for(i in 1:498){
   repl<-paste0(repl,"")
   repl<-strsplit(repl,"\n")
   Address1<-repl[[1]][1]
-  burnho1<-repl[[1]][2]
+  Store_number1<-repl[[1]][2]
   
-  Address<-c(juso,Address1)
-  burnho<-c(burnho,burnho1)
+  Address<-c(Address,Address1)
+  Store_number<-c(Store_number,Store_number1)
   
   
   #위도 경도
@@ -69,10 +66,10 @@ for(i in 1:498){
   if(i==498){
     break;
   }
-  if(i==a*3){
-    remDr$executeScript(script = "var su = arguments[0]; var dom = document.querySelectorAll('#mCSB_3_container > ul >li')[su]; dom.scrollIntoView();",list(a*3))
-    a<-a+1;
-    print(a);
+  if(i==start_page*3){
+    remDr$executeScript(script = "var su = arguments[0]; var dom = document.querySelectorAll('#mCSB_3_container > ul >li')[su]; dom.scrollIntoView();",list(start_page*3))
+    start_page<-start_page+1;
+    print(start_page);
   }
 }
 
@@ -81,5 +78,5 @@ Store_name<-unlist(Store_name)
 Lat<-unlist(Lat)
 Lng<-unlist(Lng)
 
-starbucks<-data.frame(Store_name,Lat,Lng,juso,burnho)
+starbucks<-data.frame(Store_name,Lat,Lng,Address,Store_number)
 write.csv(starbucks,"starbucks.csv", row.names = FALSE)
