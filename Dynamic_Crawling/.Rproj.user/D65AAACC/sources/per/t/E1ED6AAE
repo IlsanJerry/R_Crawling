@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1566303874997.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2604384537",
+    "id" : "E1ED6AAE",
+    "lastKnownWriteTime" : 1566310405,
+    "last_content_update" : 1566310405224,
+    "path" : "C:/R_project/Crawling/Dynamic_Crawling/Crawling_yes24_review.R",
+    "project_path" : "Crawling_yes24_review.R",
+    "properties" : {
+        "cursorPosition" : "74,0",
+        "scrollLine" : "53",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
